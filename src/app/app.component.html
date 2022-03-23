@@ -1,0 +1,25 @@
+<div class="comtainer">
+  <div class="row">
+    <div class="col-xs-12">
+
+
+
+      <label>UserName</label>
+      <!-- input event using two-way-data-binding  -->
+      
+      <input type="text" class="form-control"
+      [(ngModel)] = "username"
+      >
+      <p>UserName is {{ username }}</p>
+      
+      <!-- button disabled if username is empty(NULL) -->
+      
+      <button class="btn btn-primary"
+      [disabled] = "username === '' "
+      (click) = "username = '' "
+      >Reset User</button>
+
+
+    </div>
+  </div>
+</div>
